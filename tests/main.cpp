@@ -1,4 +1,4 @@
-#define XMA_IMPLENTATION
+#define XMA_IMPLEMENTATION
 
 #include <XMA/Core.hpp>
 

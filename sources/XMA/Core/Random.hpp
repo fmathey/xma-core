@@ -1,11 +1,11 @@
-#ifndef _XMA_CORE_BOOTSTRAP_HPP
-#define _XMA_CORE_BOOTSTRAP_HPP
+#ifndef _XMA_CORE_RANDOM_HPP
+#define _XMA_CORE_RANDOM_HPP
 
 namespace XMA { namespace Core {
 
 // ---------------------------------------------------------------------------------------------------------------------
 
-static int bootstrap(std::function<void(void)> cb, bool showError = true) noexcept;
+static float random(float min, float max) noexcept;
 
 // ---------------------------------------------------------------------------------------------------------------------
 
@@ -14,7 +14,7 @@ static int bootstrap(std::function<void(void)> cb, bool showError = true) noexce
 // ---------------------------------------------------------------------------------------------------------------------
 
 #ifdef XMA_IMPLEMENTATION
-    #include "Bootstrap.cxx"
+    #include "Random.cxx"
 #endif
 
 // ---------------------------------------------------------------------------------------------------------------------
